@@ -2,14 +2,14 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Scanner;
 
-final abstract class Initiator {
+abstract class Initiator {
 }
 
-final class MyInitiator extends Initiator {
+class MyInitiator extends Initiator {
 
 }
 
-final class YourInitiator extends MyInitiator {
+class YourInitiator extends MyInitiator {
 
 }
 
@@ -67,7 +67,7 @@ final class Subtractor extends BinaryOperator {
     }
 }
 
-final class Multiplier extends BinaryOperator {
+class Multiplier extends BinaryOperator {
     public Multiplier() {
       super("times");
     }
@@ -101,7 +101,7 @@ public final class Solution {
       // Hack
       BinaryOperator.OP_TYPES = new HashMap<>();
 
-      Multiplier.act(3.0f, 2.2f);
+//      Multiplier.act(3.0f, 2.2f);
 
       new Multiplier().OP_TYPES.put("yyy", null);
 

@@ -56,7 +56,7 @@ public class ArrayTests {
 		System.out.println(myIntgs.toString());
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		ArrayTests someTests = new ArrayTests();
 		someTests.test();
 	}
